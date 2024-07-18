@@ -1,3 +1,15 @@
+document.getElementById('fullscreenBtn').addEventListener('click', function() {
+    document.getElementById('fullscreenBtn').innerHTML = '<img id="myImage" src="exit-fullscreen.svg" alt="New Image">'
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+            alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+        });
+    } else {
+        document.getElementById('fullscreenBtn').innerHTML = '<img id="myImage" src="Go-full-screen.svg" alt="New Image">';
+        document.exitFullscreen();
+    }
+});
+
 // Timer functionality
 let time = 3 * 60 * 60 + 20 * 60; // 3 hours 20 minutes in seconds
 const timerElement = document.getElementById('timer');

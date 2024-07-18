@@ -324,6 +324,14 @@ button.subjectButton.active {
 }
 
 @media(max-width: 700px){
+    h1{
+        font-size: 22px;
+        color: #008a5e;
+    }
+    .timer{
+        font-size: 17px;
+        width: 80px;
+    }
     .questionNavContainer{
         display: none;
     }
@@ -355,6 +363,11 @@ button.subjectButton.active {
     .popup{
         width: 80%;
     }
+    input{
+        margin: 0 2px 0 25px;
+        height: 18px;
+        width: 18px;
+    }    
 }
 
 .popup {
@@ -452,4 +465,25 @@ button.subjectButton.active {
 }
 #questionNavContainerScore h2{
     text-align: center;
+}
+
+
+
+.fullscreen-button {
+    /* position: fixed; */
+    float: left;
+    margin: 11px 0 0 -55px;
+    /* top: 10px; */
+    /* right: 10px; */
+    /* padding: 10px 20px; */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 60%;
+    background-color: #fff;
+}
+.fullscreen-button img{
+    height: 25px;
+    width: 25px;
 }
