@@ -170,6 +170,7 @@ input{
 }
 .qBox.answered {
     background-color: lightgreen;
+    border-radius: 50%;
 }
 
 /* .questionNavContainer{

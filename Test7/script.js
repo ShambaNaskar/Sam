@@ -1,3 +1,4 @@
+//Go full screen of exit full screen functionality
 document.getElementById('fullscreenBtn').addEventListener('click', function() {
     document.getElementById('fullscreenBtn').innerHTML = '<img id="myImage" src="exit-fullscreen.svg" alt="New Image">'
     if (!document.fullscreenElement) {
@@ -106,6 +107,7 @@ function submitTest() {
         }
     }
 
+    //hides clear response button when answer is submitted
     const clrresp = document.querySelectorAll('.qButton').forEach(button => {
         button.style.display = 'none';
     });
