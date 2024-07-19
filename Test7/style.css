@@ -10,6 +10,7 @@ body {
 main{
     display: flex;
     max-width: 1500px;
+    background-color: #a8a8a8;
 }
 main h1{
     text-align: center;
