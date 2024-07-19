@@ -13,6 +13,7 @@ main{
 }
 main h1{
     text-align: center;
+    color: #008a5e;
 }
 .leftBar{
     width: 20%;
