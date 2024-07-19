@@ -5,12 +5,9 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #f4f4f4;
-    /* max-width: 1500px; */
 }
 main{
     display: flex;
-    /* max-width: 1500px; */
-    /* background-color: #a8a8a8; */
 }
 main h1{
     text-align: center;
@@ -50,18 +47,11 @@ main h1{
     border-radius: 17px;
 }
 
-/* .leftBar{
-    width: 20%;
-    background-color: antiquewhite;
-} */
-
 #testForm{
     box-sizing: border-box;
     max-width: 1000px;
-    /* margin: 20px; */
     padding: 20px;
     width: 100%;
-    /* background-color: aquamarine; */
 }
 h2 {
     color: #333;
@@ -99,17 +89,11 @@ input{
 }
 
 .qButton {
-    /* background-color: #28a745;
-    color: #fff;
-    padding: 7px 10px;
-    border: none; */
     cursor: pointer;
     font-size: 16px;
     margin-left: 25px;
     padding: 2px 5px;
     font-family: 'Times New Roman', Times, serif;
-    /* border-radius: 7px; */
-    /* box-shadow: 0 0 10px #00000026 */
 }
 .qButton:hover{
     background-color: #0faf00;
@@ -135,7 +119,6 @@ input{
     position: fixed;
     bottom: 10px;   
     right: var(--fixed-right, 20px);
-    /* right: 20px; */
     display: flex;
     flex-wrap: wrap;
     width: 240px;
@@ -144,19 +127,6 @@ input{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-
-/* .qBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 25px;
-    margin: 2px;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid #000;
-    cursor: pointer;
-} */
 
 .qBox{
     height: 25px;
@@ -175,11 +145,6 @@ input{
     border-radius: 50%;
 }
 
-/* .questionNavContainer{
-    display: flex;
-    justify-content: center;
-    border: 1px solid #555;
-} */
 .navContainer{
     display: flex;
     flex-wrap: wrap;
@@ -190,7 +155,6 @@ input{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* width: 90%; */
     padding: 10px 10px 0 10px;
 }
 
@@ -215,18 +179,15 @@ input{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* margin-bottom: 10px; */
 }
 button.subjectButton {
     background-color: white;
-    /* padding: 10px 20px; */
     margin: 5px;
     border: 2px solid #ccc;
     cursor: pointer;
     height: 40px;
     width: 100px;
     border-radius: 7px;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.166); */
 }
 
 button.subjectButton.active {
@@ -424,8 +385,6 @@ button.subjectButton.active {
 }
 
 .scoreDisplay {
-    /* height: 100px;
-    width: 200px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -456,7 +415,6 @@ button.subjectButton.active {
 
 .popup hr{
     width: 50%;
-    /* height: 0.5px; */
     background-color: #a8a8a8;
     border: none;
     height: 1px;
@@ -465,20 +423,16 @@ button.subjectButton.active {
 #questionNavContainerScore{
     display: none;
     width: 100%;
+    margin-bottom: -15px;
 }
 #questionNavContainerScore h2{
     text-align: center;
+    color: #008a5e;
 }
 
 
-
 .fullscreen-button {
-    /* position: fixed; */
-    float: left;
     margin: 11px 0 0 -55px;
-    /* top: 10px; */
-    /* right: 10px; */
-    /* padding: 10px 20px; */
     cursor: pointer;
     border: none;
     border-radius: 5px;
