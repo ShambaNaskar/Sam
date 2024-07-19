@@ -5,12 +5,12 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #f4f4f4;
-    max-width: 1500px;
+    /* max-width: 1500px; */
 }
 main{
     display: flex;
-    max-width: 1500px;
-    background-color: #a8a8a8;
+    /* max-width: 1500px; */
+    /* background-color: #a8a8a8; */
 }
 main h1{
     text-align: center;
