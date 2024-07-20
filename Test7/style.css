@@ -103,18 +103,6 @@ input{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .questionNavContainer {
     position: fixed;
     bottom: 10px;   
@@ -429,7 +417,6 @@ button.subjectButton.active {
     text-align: center;
     color: #008a5e;
 }
-
 
 .fullscreen-button {
     margin: 11px 0 0 -55px;

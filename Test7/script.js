@@ -80,6 +80,9 @@ function submitTest() {
     overlay.style.display = 'block';
 
     document.getElementById('questionNavContainerScore').innerHTML = `<h2> Score: ${score} </h2>`;
+
+    //Adjust the position of full screen button when submitted
+    fullscreenBtn.style.margin = '10px 0 0 0';
 }
 
 
