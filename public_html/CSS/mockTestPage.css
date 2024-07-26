@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    box-sizing: border-box;
+}
+
+.examPageHeading{
+    margin: 0 5%;
+    width: 90%;
+}
+
+.examPageHeading h1{
+    padding: 10px 0;
+    font-size: 36px;
+    color: #4b4b4b;
+    text-align: center;
+}
+.examPageHeading p{
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: justify;
+    color: #3C4852;
+    text-align: center;
+}
+@media(max-width: 900px){
+    
+    .examPageHeading h1{
+        font-size: 28px;
+    }
+    .examPageHeading p{
+        font-size: 18px;
+    }
+
+}
+.mockTestContainer{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.mockTestSubject{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.subjectCard{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 15px 15px 15px;
+    box-shadow: 0 0 5px rgb(95, 95, 95);
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.subjectCard:hover{
+    box-shadow: 0 2px 8px rgb(95, 95, 95);
+}
+.subjectName h2{
+    margin: 0;
+    font-size: 24px;
+}
+.setNo{
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.subjectButtons a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.testCategory{
+    background-color: rgb(3, 182, 3);
+    text-align: center;
+    margin-top: 10px;
+    padding: 7px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4b4b4b;
+}
+@media(max-width: 800px){
+    .testCategory{
+        padding: 12px 7px;
+    }
+    .subjectButtons a{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+.testCategory:hover{
+    background-color: rgb(15, 215, 15);
+}

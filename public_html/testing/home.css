@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8f9fa;
+    background-color: #ffffff;
+}
+.mainContainer{
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 80px;
+}
+@media(max-width:1000px){
+    .mainContainer{
+        margin: 10px;
+    }
+}
+header{
+    background-color: #ffffff;
+}
+.contentBox{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    width: 23%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 7px rgba(0, 0, 140, 0.249); */
+    box-shadow: 0px 0px 15px 10px #e9eef2 !important;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.contentBox:hover{
+    box-shadow: 0px 0px 7px rgba(0, 140, 0, 0.475);
+    background-color: rgba(117, 255, 145, 0.055);
+}
+.contentBox img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+.cardInfo{
+    text-align: center;
+}
+.cardText h1,
+.cardText h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 174, 0);
+}
+.cardText p{
+    text-align: center;
+    font-size: 20px;
+    margin: 2px 20px 0 20px;
+    font-weight: 500;
+}
+.cardButton a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 174, 0);
+    box-shadow: 0px 0px 5px rgba(0, 6, 175, 0.583);
+    transition-duration: all;
+    transition-duration: 0.2s;
+}
+.cardButton a:hover{
+    color: white;
+    background-color: rgb(1, 191, 1);
+    box-shadow: 0px 0px 7px rgba(0, 6, 175, 0.583)
+}
+.cardButton{
+    padding: 15px;
+    margin: 10px;
+}
+@media(max-width:650px){
+    .mainContainer{
+        margin: 0;
+    }
+    .contentBox{
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .cardInfo{
+        /* background-color: bisque;
+        z-index: 5; */
+        width: 60%;
+        margin: 5px -10px 0 0;
+    }
+    .cardText h1,
+    .cardText h2{
+        margin: 5px 0px 22px 0px;
+        font-size: 18px;
+    }
+    .cardText p{
+        font-size: 14px;
+        font-weight: 600;
+        margin: -20px 0px -5px 0px;
+        color: rgb(100, 100, 100);
+    }
+    .cardButton a{
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+    .cardButton{
+        padding: 15px;
+        margin: 2px;
+    }
+    .cardImage{
+        box-sizing: border-box;
+        /* margin: 10px; */
+        margin: 10px -5px 10px 5px;
+        width: 40%;
+        /* background-color: aqua; */
+    }
+}
+
+.container2{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    /* flex-wrap: wrap; */
+}
+.infoContainer{
+    width: 65%; 
+    padding: 10px 25px 40px 80px;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #434343;
+    /* min-width: 400px; */
+}
+@media(max-Width: 1000px){
+    .infoContainer{
+        padding: 10px 25px 10px 25px;
+        width: 60%;
+    }
+}
+.infoContainer h2{
+    color: rgb(0, 150, 30);
+    font-size: 30px;
+    text-align: center;
+}
+.infoContainer li{
+    text-align: justify;
+    list-style-type: none;
+    margin-top: 20px;
+}
+.infoContainer li b{
+    color: #0d6efd;
+    text-align: left;
+}
+@media(max-width: 800px){
+    .infoContainer p, li{
+        font-size: 18px;
+    }
+    .infoContainer h2{
+        font-size: 22px;
+    }
+
+}
+.emptyBox2{
+    width: 35%;
+    min-width: 300px; 
+}
+.usefulLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    margin: 10px 0;
+}
+
+.usefulLinks h4{
+    font-size: 22px;
+    color: #3C4852;
+    margin-bottom: 10px ;
+}
+@media(max-width:600px){
+    .usefulLinks h4{
+        font-size: 20px;
+    }
+}
+.usefulLinks a{
+    text-decoration: none;
+    width: 60%;
+    background-color: rgb(234, 234, 234);
+    padding: 8px;
+    font-size: 17px;
+    border-bottom: 1px solid gray;
+    color: #0d6efd;
+    min-width: 240px;
+}
+.usefulLinks a:hover{
+    background-color: white;
+    color: rgb(0, 182, 25);
+}
+@media(max-width: 700px){
+    .container2{
+        flex-wrap: wrap;
+    }
+    .infoContainer{
+        width: 100%;
+        padding: 17px;
+        margin: 0;
+    }
+    .emptyBox2{
+        width: 100%;
+    }
+}

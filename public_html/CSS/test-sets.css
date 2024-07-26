@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.testSetHeading{
+    width: 60%;
+    margin-left: 5%;
+}
+.testSetHeading h1{
+    padding: 10px 0;
+    font-size: 36px;
+    color: #4b4b4b;
+}
+.testSetHeading p{
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: justify;
+    color: #3C4852;
+}
+@media(max-width: 800px){
+    .testSetHeading{
+        margin: 0 5%;
+        width: 90%;
+    }
+    .testSetHeading h1{
+        font-size: 28px;
+    }
+    .testSetHeading p{
+        font-size: 18px;
+    }
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.testSetContainer{
+    padding: 10px 10px 10px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.setCard{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgb(95, 95, 95);
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+@media(max-width:400px){
+    .setCard{
+        width: 80%;
+    }
+}
+.setCard:hover{
+    box-shadow: 0 0 7px rgb(95, 95, 95);
+}
+.setHeading{
+    color: #3C4852;
+    margin-bottom: 7px;
+}
+.testSetInfo{
+    display: flex;
+}
+.testSetInfo p{
+    margin: 0 20px;
+    color: #646464;
+}
+.setCard a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.strartTest{
+    background-color: rgb(3, 182, 3);
+    padding: 5px 20px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+@media(max-width:400px){
+    .strartTest{
+        padding: 10px 20px;
+        
+    }
+}
+.quickLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-width: 250px;   
+}
+
+.quickLinks h4{
+    font-size: 25px;
+    color: #3C4852;
+}
+.quickLinks a{
+    text-decoration: none;
+    width: 60%;
+    background-color: rgb(234, 234, 234);
+    padding: 8px;
+    font-size: 17px;
+    border-bottom: 1px solid gray;
+    color: #0d6efd;
+    min-width: 270px;
+}
+.quickLinks a:hover{
+    background-color: white;
+    color: rgb(0, 182, 25);
+}
+@media(max-width:1100px){
+    .testSetContainer{
+        padding: 10px;
+    }
+    .quickLinks{
+        width: 40%;
+    }
+    .testSetContainer{
+        width: 60%;
+    }
+}
+@media(max-width:800px){
+    .testSetContainer{
+        padding: 10px;
+        width: 100%;
+    }
+    .quickLinks{
+        width: 100%;
+    }
+}
+

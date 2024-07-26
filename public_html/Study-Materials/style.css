@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: white;
+    padding-bottom: 25px;
+}
+.studyMaterialHeading{
+    text-align: center;
+    color: #007cee;
+    padding: 10px 0;
+}
+
+.studyMaterialContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media(max-width:999px){
+    .studyMaterialContainer{
+        width: 95%;
+    }
+}
+.studyMaterialContainer img{
+    width: 100%;
+    margin: auto;
+    border-radius: 7px 7px 0 0;
+}
+.studyCard{
+    width: 280px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgb(186, 186, 186);
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.studyCard:hover{
+    box-shadow: 0 2px 15px rgb(186, 186, 186);
+}
+@media(max-width:400px){
+    .studyCard{
+        width: 100%;
+    }
+}
+.studyCard img{
+    aspect-ratio: 4/3;
+}
+.studyCard h2{
+    text-align: center;
+    color: rgb(0, 174, 0);
+    margin: 7px 10px;
+}
+.studyCard p{
+    margin: 0 7px;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(79, 79, 79);
+}
+.studyCard a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 174, 0);
+    box-shadow: 0px 0px 5px rgba(0, 6, 175, 0.583);
+    margin: 10px 0 15px;
+}
