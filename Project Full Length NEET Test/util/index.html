@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Box Class Adder</title>
+    <style>
+        #buttons-container, #boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.ram {
+    background-color: red;
+}
+
+    </style>
+</head>
+<body>
+    <div id="buttons-container">
+        <button onclick="addRamClass(1)">1</button>
+        <button onclick="addRamClass(2)">2</button>
+        <button onclick="addRamClass(3)">3</button>
+        <button onclick="addRamClass(4)">4</button>
+        <button onclick="addRamClass(5)">5</button>
+    </div>
+    <div id="boxes-container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+        <div class="box" id="box-4"></div>
+        <div class="box" id="box-5"></div>
+    </div>
+    <script>
+        function addRamClass(index) {
+    const box = document.getElementById(`box-${index}`);
+    box.classList.add('ram');
+    updateRamCount();
+}
+
+function updateRamCount() {
+    const ramBoxes = document.querySelectorAll('.ram');
+    console.log(`Number of boxes with class 'ram': ${ramBoxes.length}`);
+}
+
+    </script>
+</body>
+</html>
